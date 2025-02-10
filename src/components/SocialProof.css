@@ -1,0 +1,58 @@
+/* Social Proof Section */
+.social-proof {
+    background-color: #1f2937; /* Tailwind's bg-gray-800 */
+    padding: 80px 16px; /* Tailwind's py-20 and px-4 */
+  }
+  
+  /* Container */
+  .social-proof-container {
+    max-width: 1200px; /* Tailwind's container */
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  /* Title */
+  .social-proof-title {
+    font-size: 1.875rem; /* Tailwind's text-3xl */
+    font-weight: bold;
+    margin-bottom: 48px; /* Tailwind's mb-12 */
+  }
+  
+  /* Testimonials Grid */
+  .testimonials-grid {
+    display: grid;
+    grid-template-columns: 1fr; /* Tailwind's grid-cols-1 */
+    gap: 32px; /* Tailwind's gap-8 */
+  }
+  
+  @media (min-width: 768px) {
+    .testimonials-grid {
+      grid-template-columns: repeat(3, 1fr); /* Tailwind's md:grid-cols-3 */
+    }
+  }
+  
+  /* Testimonial Card */
+  .testimonial-card {
+    background-color: #374151; /* Tailwind's bg-gray-700 */
+    padding: 24px; /* Tailwind's p-6 */
+    border-radius: 8px; /* Tailwind's rounded-lg */
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1); /* Tailwind's shadow-lg */
+  }
+  
+  /* Testimonial Quote */
+  .testimonial-quote {
+    font-size: 1.125rem; /* Tailwind's text-lg */
+    margin-bottom: 16px; /* Tailwind's mb-4 */
+    color: #d1d5db; /* Default text color */
+  }
+  
+  /* Testimonial Name */
+  .testimonial-name {
+    font-weight: 600; /* Tailwind's font-semibold */
+    color: #d1d5db;
+  }
+  
+  /* Testimonial Company */
+  .testimonial-company {
+    color: #22c55e; /* Tailwind's text-green-400 */
+  }

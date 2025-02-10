@@ -1,0 +1,39 @@
+/* Header container */
+.header {
+    background-color: #1f2937; /* Tailwind's bg-gray-800 */
+    padding: 16px 0; /* Tailwind's py-4 */
+  }
+  
+  /* Navigation container */
+  .header-container {
+    max-width: 1200px; /* Tailwind's container */
+    margin: 0 auto;
+    padding: 0 16px; /* Tailwind's px-4 */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  /* Logo styles */
+  .header-logo {
+    font-size: 1.5rem; /* Tailwind's text-2xl */
+    font-weight: bold;
+    color: #22c55e; /* Tailwind's text-green-400 */
+    text-decoration: none;
+  }
+  
+  /* Navigation links */
+  .header-links {
+    display: flex;
+    gap: 16px; /* Tailwind's space-x-4 */
+  }
+  
+  .header-link {
+    color: #d1d5db; /* Tailwind's default text color */
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .header-link:hover {
+    color: #22c55e; /* Tailwind's text-green-400 */
+  }

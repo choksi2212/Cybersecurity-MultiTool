@@ -1,0 +1,57 @@
+/* FAQ container styles */
+.faq-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 80px 16px;
+  }
+  
+  /* FAQ title styles */
+  .faq-title {
+    font-size: 1.875rem; /* Tailwind's text-3xl */
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 48px; /* Tailwind's mb-12 */
+  }
+  
+  /* FAQ list styles */
+  .faq-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px; /* Tailwind's space-y-4 */
+  }
+  
+  /* FAQ item styles */
+  .faq-item {
+    background-color: #1f2937; /* Tailwind's gray-800 */
+    border-radius: 0.5rem; /* Tailwind's rounded-lg */
+    overflow: hidden;
+  }
+  
+  /* FAQ question styles */
+  .faq-question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 16px; /* Tailwind's p-4 */
+    text-align: left;
+    background: none;
+    border: none;
+    font-size: 1rem;
+    font-weight: 600; /* Tailwind's font-semibold */
+    cursor: pointer;
+    color: inherit;
+  }
+  
+  /* FAQ answer styles */
+  .faq-answer {
+    padding: 16px 16px 0; /* Tailwind's p-4 pt-0 */
+    font-size: 0.875rem; /* Tailwind's text-gray-400 equivalent */
+    color: #9ca3af; /* Tailwind's gray-400 */
+  }
+  
+  /* FAQ icon styles */
+  .faq-icon {
+    width: 20px; /* Tailwind's w-5 */
+    height: 20px; /* Tailwind's h-5 */
+  }

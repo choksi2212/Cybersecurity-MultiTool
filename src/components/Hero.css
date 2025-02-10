@@ -1,0 +1,61 @@
+/* Hero section */
+.hero {
+    max-width: 1200px; /* Tailwind's container */
+    margin: 0 auto;
+    padding: 80px 16px; /* Tailwind's py-20 and px-4 */
+    display: flex;
+    flex-direction: column; /* Default flex direction */
+    gap: 40px;
+  }
+  
+  @media (min-width: 768px) {
+    .hero {
+      flex-direction: row; /* Tailwind's md:flex-row */
+      align-items: center;
+    }
+  }
+  
+  /* Content container */
+  .hero-content {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    flex: 1;
+  }
+  
+  .hero-text {
+    flex: 1;
+  }
+  
+  /* Title and description */
+  .hero-title {
+    font-size: 2.25rem; /* Tailwind's text-4xl */
+    line-height: 1.2;
+    font-weight: bold;
+    margin-bottom: 24px; /* Tailwind's mb-6 */
+  }
+  
+  @media (min-width: 768px) {
+    .hero-title {
+      font-size: 3rem; /* Tailwind's md:text-5xl */
+    }
+  }
+  
+  .hero-description {
+    font-size: 1.25rem; /* Tailwind's text-xl */
+    margin-bottom: 32px; /* Tailwind's mb-8 */
+  }
+  
+  /* Image container */
+  .hero-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .image-style {
+    border-radius: 8px; /* Tailwind's rounded-lg */
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1); /* Tailwind's shadow-lg */
+  }
+  

@@ -1,0 +1,15 @@
+.cta-button {
+    background-color: #38a169; /* Green-500 */
+    color: #1a202c; /* Gray-900 */
+    font-weight: bold;
+    padding: 12px 24px; /* py-3 px-6 */
+    border-radius: 0.5rem; /* rounded-lg */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* shadow-lg */
+    transition: all 0.3s ease; /* transition-all */
+  }
+  
+  .cta-button:hover {
+    background-color: #2f855a; /* Green-600 */
+    box-shadow: 0 8px 10px rgba(0, 0, 0, 0.15); /* hover:shadow-xl */
+    transform: scale(1.05); /* hover:scale-105 */
+  }
