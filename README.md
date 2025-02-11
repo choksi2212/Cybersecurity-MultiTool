@@ -12,7 +12,7 @@ CyberGuard is a powerful cybersecurity toolkit built with Python and React, desi
 🚀 Get Started
 	1.	Clone the repository:
 
-git clone https://github.com/yourusername/cyberguard.git
+git clone https://github.com/choksi2212/cyberguard.git
 
 
 	2.	Follow setup instructions for backend (Python) and frontend (React).
