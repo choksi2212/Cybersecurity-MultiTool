@@ -1,72 +1,35 @@
-import { Shield, Eye, Key, AlertTriangle } from 'lucide-react';
-import './FeatureCards.css'; // Import the CSS file
+import React from "react";
+import { useNavigate } from "react-router-dom";
+import { Shield, Eye, Key, AlertTriangle } from "lucide-react";
+import "./FeatureCards.css";
 
 const features = [
-  {
-    title: "Network Monitoring",
-    description: "Real-time packet sniffing and network traffic analysis.",
-    icon: Eye
-  },
-  {
-    title: "Malware Detection",
-    description: "Advanced algorithms to identify and neutralize threats.",
-    icon: Shield
-  },
-  {
-    title: "Password Manager",
-    description: "Securely store and manage your passwords across devices.",
-    icon: Key
-  },
-  {
-    title: "Anomaly Detection",
-    description: "AI-powered system to detect network anomalies and phishing attempts.",
-    icon: AlertTriangle
-  }
-  ,
-  {
-    title: "Image Forensics",
-    description: "Analyzes image metadata and checks for tempering",
-    icon: AlertTriangle
-  }
-  ,
-  {
-    title: "Keystroke Authentication",
-    description: "Uses typing dynamics for authentication",
-    icon: AlertTriangle
-  }
-  ,
-  {
-    title: "Packet Sniffer",
-    description: "Captures and analyez network sniffer",
-    icon: AlertTriangle
-  }
-  ,
-  {
-    title: "Password checker",
-    description: "Evaluates password strength",
-    icon: AlertTriangle
-  }
-  ,
-  {
-    title: "Steganography",
-    description: "Hides and data in images",
-    icon: AlertTriangle
-  }
+  { icon: <Eye />, title: "Network Monitoring", desc: "Real-time packet sniffing and network traffic analysis.", path: "/network-analyzer" },
+  { icon: <AlertTriangle />, title: "Image Forensics", desc: "Analyzes image metadata and checks for tampering.", path: "/image-forensics" },
+  { icon: <Key />, title: "Keystroke Logger", desc: "Records and analyzes keystroke patterns.", path: "/keystroke-logger" },
+  { icon: <Shield />, title: "Password Checker", desc: "Evaluates password strength.", path: "/password-checker" }
 ];
 
-export default function FeatureCards() {
+const FeatureCards = () => {
+  const navigate = useNavigate();
+
   return (
     <section id="features" className="features-container">
       <h2 className="features-title">Our Features</h2>
       <div className="features-grid">
         {features.map((feature, index) => (
           <div key={index} className="feature-card">
-            <feature.icon className="feature-icon" />
+            <div className="feature-icon">{feature.icon}</div>
             <h3 className="feature-title">{feature.title}</h3>
-            <p className="feature-description">{feature.description}</p>
+            <p className="feature-description">{feature.desc}</p>
+            <button className="feature-button" onClick={() => navigate(feature.path)}>
+              Explore
+            </button>
           </div>
         ))}
       </div>
     </section>
   );
-}
+};
+
+export default FeatureCards;

@@ -1,5 +1,5 @@
 import './App.css'
-import CTA from './components/cta'
+import CTA from './components/CTA'
 import FAQ from './components/FAQ'
 import FeatureCards from './components/FeatureCards'
 import Footer from './components/Footer'
@@ -12,19 +12,17 @@ function App() {
 
   return (
     <>
-    <CTA />
+
     <Header/>
     <Hero/>
-     
       <FeatureCards/>
   
-      <SocialProof/>
-      
-      <FAQ />
-      <Footer/>
+      <SocialProof />
+    <CTA />
+    <FAQ />
       
     </>
   )
 }
 
-export default App
+export default App;
